@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { Button } from "../ui/button";
 import localFont from 'next/font/local'
 
-const myFont = localFont({ src: '../../app/fonts/myfont.ttf' })
+const ClashDisplay = localFont({ src: '../../app/fonts/ClashDisplay.ttf' })
 
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -15,7 +15,7 @@ const NavBar = () => {
       <div className="justify-between md:items-center md:flex max-w-[1200px] mx-auto px-5">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link style={myFont.style} href="/" className="text-base md:text-4xl font-extrabold">
+            <Link style={ClashDisplay.style} href="/" className="text-base md:text-4xl font-extrabold">
               get<span className="text-primary">linked</span>
             </Link>
             <div className="md:hidden">

@@ -2,6 +2,7 @@ import NavBar from '@/components/navigation/nav'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
+import Footer from '@/components/footer'
 
 
 const inter = Montserrat({ subsets: ['latin'] })
@@ -23,8 +24,9 @@ export default function RootLayout({
           <div className='z-10'>
             <NavBar />
           </div>
-
           {children}
+          <Footer />
+
         </main>
       </body>
     </html>
