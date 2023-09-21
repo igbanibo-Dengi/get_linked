@@ -1,0 +1,35 @@
+/* GifBackgroundSection.module.css */
+.gifBackground {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+
+.gif {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../../public/assets/images/Untitled-design-4-unscreen.gif') center center / cover no-repeat;
+  z-index: -1;
+}
+
+.overlay {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: auto;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  z-index: -1;
+}
+
+@media screen and (max-width: 500px) {
+  .gifBackground {
+    width: 70px;
+    height: 70px;
+  }
+}
