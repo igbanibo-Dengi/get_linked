@@ -20,7 +20,6 @@ const Revolution = () => {
         deleteSpeed={50}
         delaySpeed={2000}
         onLoopDone={handleDone}
-      // onType={handleType}
       />
     </div>
   );

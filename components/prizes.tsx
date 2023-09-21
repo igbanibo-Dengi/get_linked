@@ -6,6 +6,8 @@ import bronze from '../public/assets/images/bronze_medal 1.png'
 import trophy from '../public/assets/images/trophy.png'
 
 import localFont from 'next/font/local'
+import StarGif from './starGif/stargif'
+import PurpleStar from './purplestar/purpleStar'
 
 const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
 
@@ -24,13 +26,25 @@ const Prizes = () => {
           <p className='text-[14px]'>Highlight of the prizes or rewards for winners and for participants</p>
         </header>
         <div className='flex flex-col md:flex-row gap-36 md:gap-0'>
-          <div className='flex flex-1 flex-col justify-center items-center'>
+          <div className='flex flex-1 flex-col justify-center items-center relative'>
             <Image
               src={trophy}
               width={500}
               height={500}
               alt='The big Idea'
             />
+            {/* <div className='z-20 absolute bottom-[500px] right-10'>
+              top-10 left-1 
+              <StarGif />
+            </div> */}
+            <div className='z-20 absolute -bottom-10 left-10'>
+              {/* left-36 -bottom-10  */}
+              <StarGif />
+            </div>
+            <div className='z-20 absolute -top-36 left-0 md:-top-10 md:left-20'>
+              {/* left-36 -bottom-10  */}
+              <PurpleStar />
+            </div>
           </div>
           <div className='flex-1 flex flex-col text-center md:text-left'>
             {/* header for large screens */}
@@ -40,7 +54,26 @@ const Prizes = () => {
               <p className='text-[14px]'>Highlight of the prizes or rewards for winners and <br /> for participants</p>
             </header>
             {/* for screens > 768px */}
-            <div className='justify-center pr-10 gap-6 relative hidden xl:flex'>
+
+
+            <div className=' justify-center pr-10 gap-6 relative hidden xl:flex'>
+
+              {/* stars animation start */}
+
+              <div className='z-20 absolute -top-[100px] right-10'>
+                {/* top-10 left-1  */}
+                <StarGif />
+              </div>
+              <div className='z-20 absolute -bottom-10 right-48'>
+                {/* left-36 -bottom-10  */}
+                <StarGif />
+              </div>
+              <div className='z-20 absolute -top-40 left-10'>
+                {/* left-36 -bottom-10  */}
+                <StarGif />
+              </div>
+
+              {/* stars animation end */}
               <div className='flex flex-col border border-primary justify-end rounded-[8px] h-[250px]  px-3 pb-5 pt-5 text-center bg-primary/20 font-bold items-center'>
                 <Image
                   src={silver}
@@ -80,6 +113,21 @@ const Prizes = () => {
             </div>
             {/* for screens < 768px */}
             <div className='justify-center gap-3 relative flex xl:hidden'>
+
+              {/* stars animation start */}
+
+              <div className='z-20 absolute -top-[100px] right-10'>
+                {/* top-10 left-1  */}
+                <StarGif />
+              </div>
+              <div className='z-20 absolute -bottom-10 right-48'>
+                {/* left-36 -bottom-10  */}
+                <StarGif />
+              </div>
+
+
+              {/* stars animation end */}
+
               <div className='flex flex-col border border-primary justify-end rounded-[8px] h-[120px]  px-5 pb-5 text-center bg-primary/20 font-bold items-center'>
                 <Image
                   src={silver}

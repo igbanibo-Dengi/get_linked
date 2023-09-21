@@ -8,13 +8,27 @@ import { FaFacebookF } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { BiSolidPhoneCall } from 'react-icons/bi'
 import { TiLocation } from 'react-icons/ti'
+import StarGif from './starGif/stargif'
+import PurpleStar from './purplestar/purpleStar'
 
 const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
 
 const Footer = () => {
   return (
     <footer className=' bg-[#100B20] text-white py-10 md:p-20'>
-      <div className='container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
+      <div className='relative container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10'>
+
+
+        <div className='z-20 absolute top-0 left-0  md:-left-20'>
+          <PurpleStar />
+        </div>
+        <div className='z-20 absolute -bottom-16 left-36 md:left-[700px]'>
+          <PurpleStar />
+        </div>
+        <div className='z-20 absolute md:top-10 top-56 right-32'>
+          <StarGif />
+        </div>
+
         <div className='flex flex-col justify-between lg:col-span-2 '>
           <div className='max-w-[500px]'>
             <Link style={ClashDisplay.style} href="/" className="text-base md:text-4xl font-extrabold">

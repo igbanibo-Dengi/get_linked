@@ -1,6 +1,8 @@
 import React from 'react'
 import { Button } from './ui/button'
 import localFont from 'next/font/local'
+import StarGif from './starGif/stargif'
+import PurpleStar from './purplestar/purpleStar'
 
 const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
 
@@ -15,7 +17,23 @@ const Timeline = () => {
           using for the upcoming event.</p>
       </header>
       {/* for screens > 768px */}
-      <main className='container hidden md:flex'>
+      <main className='container hidden md:flex relative'>
+
+        <div className='z-20 absolute bottom-[500px] right-20 '>
+          {/* top-10 left-1  */}
+          <StarGif />
+        </div>
+        <div className='z-20 absolute bottom-20 left-10'>
+          {/* left-36 -bottom-10  */}
+          <StarGif />
+        </div>
+        <div className='z-20 absolute -top-10 left-20'>
+          {/* left-36 -bottom-10  */}
+          <PurpleStar />
+        </div>
+
+
+
         <div className='flex flex-1 items-end flex-col pt-[90px] text-right text-[12px] md:text-[14px]'>
           <div className='h-20 w-fit'>
             <h3 className='text-primary text-[24px] font-bold'>Hackathon Announcement</h3>
@@ -86,7 +104,23 @@ const Timeline = () => {
         </div>
       </main>
       {/* for screens < 768px*/}
-      <main className='flex md:hidden '>
+      <main className='flex md:hidden relative  '>
+
+
+        <div className='z-20 absolute bottom-[500px] right-10'>
+          {/* top-10 left-1  */}
+          <StarGif />
+        </div>
+        <div className='z-20 absolute -bottom-10 left-10'>
+          {/* left-36 -bottom-10  */}
+          <StarGif />
+        </div>
+        <div className='z-20 absolute -top-10 left-10'>
+          {/* left-36 -bottom-10  */}
+          <PurpleStar />
+        </div>
+
+
         <div className='flex flex-col pt-12 gap-10 w-[50px] items-center justify-center'>
           <div> <hr className='rotate-90 w-[90px] border border-primary' /> </div>
           <Button className='mb-3 mt-2' size={'iconSmall'}>1</Button>

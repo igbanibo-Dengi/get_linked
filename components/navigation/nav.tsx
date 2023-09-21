@@ -1,5 +1,6 @@
 "use client";
 
+import { usePathname } from 'next/navigation';
 import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "../ui/button";
@@ -10,6 +11,7 @@ const ClashDisplay = localFont({ src: '../../app/fonts/ClashDisplay.ttf' })
 const NavBar = () => {
   const [navbar, setNavbar] = useState(false);
 
+  const pathname = usePathname();
   return (
     <nav className="w-full pt-4 bg-background text-white z-50 border-b border-gray-700">
       <div className="justify-between md:items-center md:flex max-w-[1200px] mx-auto px-5">
@@ -63,15 +65,10 @@ const NavBar = () => {
               >
                 FAQs
               </Link>
-              <Link
-                href="/contact"
-                className="hover:text-primary"
-              >
-                Contact
-              </Link>
-              <div className="w-fit">
+              <Link href='/contact' className={pathname === '/contact' ? 'text-primary' : 'hover:text-primary'}>Contact</Link>
+              <Link href='/register' className="w-fit">
                 <Button size={'lg'}>Register</Button>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -11,12 +11,13 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+import PurpleStar from './purplestar/purpleStar'
 
 
 const Faqs = () => {
   return (
     < section className='border-b border-gray-700 ' >
-      <section className='container py-16'>
+      <section className='container py-24'>
         <div className='flex flex-col-reverse md:flex-row-reverse  gap-10 md:gap-0 justify-center'>
           <div className='flex-1 flex flex-col justify-center items-center'>
             <Image
@@ -26,7 +27,10 @@ const Faqs = () => {
               alt='The big Idea'
             />
           </div>
-          <div className='flex-1 flex flex-col justify-center text-center md:text-left md:pl-20 gap-5'>
+          <div className='relative flex-1 flex flex-col justify-center text-center md:text-left md:pl-20 gap-5'>
+            <div className='absolute -top-10 left-10'>
+              <PurpleStar />
+            </div>
             <h1 style={ClashDisplay.style} className='leading-tight text-[20px] md:text-[32px]'>Frequently Asked<br /><span className='text-primary'>Questions</span></h1>
             <p className='text-[12px] md:text-[14px]'>We got answers to the questions that you might want to ask about <span className='font-bold'>getlinked Hackathon 1.0</span></p>
             <div>

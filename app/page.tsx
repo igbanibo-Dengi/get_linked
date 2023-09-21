@@ -23,7 +23,7 @@ import Privacy from '@/components/privacy'
 // Fonts import
 import localFont from 'next/font/local'
 import Revolution from '@/components/ui/revolution'
-import Timer from '@/components/ui/timer/timer'
+import Timer from '@/components/ui/timer'
 const ClashDisplay = localFont({ src: '/fonts/ClashDisplay.ttf' })
 
 
@@ -53,10 +53,10 @@ export default function Home() {
 
 
           {/* stars gif start  */}
-          <div className='absolute top-10 left-40'>
+          <div className='absolute md:top-10 md:left-40 z-20'>
             <StarGif />
           </div>
-          <div className='absolute bottom-[180px] left-[500px]'>
+          <div className='absolute hidden md:block  bottom-10 left-40  md:bottom-[180px] md:left-[500px] z-20 w-fit h-fit'>
             <StarGif />
           </div>
           {/* stars gif end  */}
@@ -70,7 +70,7 @@ export default function Home() {
               alt='purple flare'
               className='z-0 absolute -top-24 -left-10 md:hidden'
             />
-            <div className='flex flex-col gap-5 z-10 justify-center items-center  md:items-start'>
+            <div className='flex flex-col gap-5 z-10 justify-center items-center  md:items-start relative'>
               <div className=' font-bold relative'>
                 <Image
                   src={bulb}
@@ -100,8 +100,14 @@ export default function Home() {
               </div>
               <p className='text-[13px] lg:text-[20px]'>Participate in getlinked tech Hackathon 2023 stand <br /> a chance to win a Big prize</p>
 
-              <div className='w-fit'><Button size={'lg'}>Register</Button></div>
+              <div className='w-fit relative'>
+                <Button size={'lg'}>Register</Button>
+                <div className='absolute md:bottom-[180px] md:left-[500px] z-20 sm:hidden w-fit top-1 -right-16'>
+                  <StarGif />
+                </div>
+              </div>
               <Timer />
+
             </div>
           </div>
           <div className='flex-1 flex items-start flex-col justify-between relative overflow-hidden md:pt-10'>

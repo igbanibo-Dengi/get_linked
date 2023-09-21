@@ -2,8 +2,11 @@ import React from 'react'
 import privacyImg from '../public/assets/images/privacy.png'
 import Image from 'next/image'
 import localFont from 'next/font/local'
-import check from '../public/assets/icons/check.png'
+import flare from '../public/assets/images/Purple-Lens-Flare-complete.png'
+
 import { Button } from './ui/button'
+import PurpleStar from './purplestar/purpleStar'
+import StarGif from './starGif/stargif'
 
 
 const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
@@ -14,8 +17,26 @@ const Privacy = () => {
       <section className='container py-16'>
 
         <div className='flex flex-col lg:flex-row gap-10 lg:gap-0'>
-          <div className='flex-1 flex flex-col justify-between'>
-            <header className='text-center md:text-left max-w-[500px] mx-auto md:pt-10'>
+          <div className='relative flex-1 flex flex-col justify-between'>
+
+            <div className='z-20 absolute top-28 right-0'>
+              <PurpleStar />
+            </div>
+            <div className='z-20 absolute bottom-20 -left-10'>
+              <PurpleStar />
+            </div>
+            <div className='z-20 absolute top-10 right-32'>
+              <StarGif />
+            </div>
+            <Image
+              src={flare}
+              width={1000}
+              height={1000}
+              alt='purple flare'
+              className='z-0 absolute -bottom-[100px] md:-bottom-[200px] -left-[100px] md:-left-[200px] opacity-50 '
+            />
+
+            <header className=' text-center md:text-left max-w-[500px] mx-auto md:pt-10'>
               <h1 style={ClashDisplay.style} className='text-[20px] md:text-[36px] font-bold mb-2'>Privacy Policy and <br /><span className='text-primary'>Terms</span></h1>
               <p className='text-[12px] md:text-[14px] mt-3'>Last updated on September 12, 2023</p>
               <p className='text-[12px] md:text-[14px] mt-3 leading-relaxed'>Below are our privacy & policy, which outline a lot of goodies.
