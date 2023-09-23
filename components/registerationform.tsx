@@ -5,6 +5,7 @@ import React, { useState, useEffect } from 'react';
 import Modal from 'react-modal';
 import { Button } from './ui/button';
 import Img from '../public/assets/images/congratulation.png'
+import wink from '../public/assets/images/wink-emoji-woman-png 1.png'
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -127,7 +128,7 @@ const RegistrationForm: React.FC = () => {
 
 
   return (
-    <div className='text-white'>
+    <div className='text-white z-20'>
 
 
 
@@ -215,9 +216,16 @@ const RegistrationForm: React.FC = () => {
             />
             <p className='text-[32px] font-semibold'>Congratulations <br />
               you have successfully Registered!</p>
-            <p className='my-2 text-[14px] text-white'>Yes, it was easy and you did it! <br />
-              check your mail box for next step</p>
-            <Link href="/" className='w-full'>
+            <span className='my-2'>
+              <p className='  text-[14px] text-white'>Yes, it was easy and you did it!</p>
+              <p className='flex gap-2'>check your mail box for next step <Image
+                src={wink}
+                alt='dfg'
+              /></p>
+
+
+            </span>
+            <Link href="/" className='w-full z-50'>
               <Button className='w-full'>Back</Button>
             </Link>
           </div>

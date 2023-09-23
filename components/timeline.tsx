@@ -36,7 +36,7 @@ const Timeline = () => {
 
 
         <motion.div
-          initial={{ x: -400, opacity: 0 }}
+          initial={{ x: -100, opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
           viewport={{ once: true }}
@@ -81,7 +81,7 @@ const Timeline = () => {
           <Button size={'icon'}>6</Button>
         </div>
         <motion.div
-          initial={{ x: 400, opacity: 0 }}
+          initial={{ x: 100, opacity: 0 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
           viewport={{ once: true }}
