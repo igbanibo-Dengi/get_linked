@@ -150,7 +150,7 @@ const RegistrationForm: React.FC = () => {
             <input className='text-white flex h-[47px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-[14px] ring-offset-background file:border-0 file:bg-transparent file:text-[14px] file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:outline-primary focus:bg-transparent focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50' placeholder='What is your group project topic' type="text" value={projectTopic} onChange={(e) => setProjectTopic(e.target.value)} required />
           </div>
         </div>
-        <div className='grid grid-cols-3 sm:grid-cols-2 mt-8 gap-6'>
+        <div className='grid grid-cols-3 sm:grid-cols-2 mt-8 gap-2 sm:gap-5 '>
           <div className='flex flex-col col-span-2 sm:col-span-1'>
             <label>Category:</label>
             <select className='text-white flex h-[47px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-[14px] ring-offset-background file:border-0 file:bg-transparent file:text-[14px] file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:outline-primary focus:bg-transparent focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50' value={category || ""} onChange={(e) => setCategory(Number(e.target.value) || null)} required>
