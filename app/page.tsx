@@ -28,6 +28,7 @@ import localFont from 'next/font/local'
 import Revolution from '@/components/ui/revolution'
 import Timer from '@/components/ui/timer'
 import NavBar from '@/components/navigation/nav'
+import Link from 'next/link'
 const ClashDisplay = localFont({ src: '/fonts/ClashDisplay.ttf' })
 
 
@@ -106,7 +107,10 @@ export default function Home() {
               <p className='text-[13px] lg:text-[20px]'>Participate in getlinked tech Hackathon 2023 stand <br /> a chance to win a Big prize</p>
 
               <div className='w-fit relative'>
-                <Button size={'lg'}>Register</Button>
+                <Link href='/register'>
+                  <Button size={'lg'}>Register</Button>
+
+                </Link>
                 <div className='absolute md:bottom-[180px] md:left-[500px] z-20 sm:hidden w-fit top-1 -right-16'>
                   <StarGif />
                 </div>
