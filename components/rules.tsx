@@ -18,7 +18,7 @@ const Rules = () => {
           <motion.div
             initial={{ x: 200, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
-            transition={{ duration: 1, delay: 2 }}
+            transition={{ duration: 1, delay: 0.5 }}
             viewport={{ once: true }}
             className=' relative flex-1 flex flex-col justify-center items-center'>
             <Image

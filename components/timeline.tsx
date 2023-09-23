@@ -147,50 +147,80 @@ const Timeline = () => {
           <Button className='mb-3 mt-1' size={'iconSmall'}>6</Button>
         </div>
         <section className='pr-5 flex flex-col'>
-          <div className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-5'>
+          <motion.div
+
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            viewport={{ once: true }} className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-5'>
             <h3 className='text-primary font-bold'>Hackathon Announcement</h3>
             <p>The getlinked tech hackathon 1.0 is formally announced to the general public and teams begin to get ready to register</p>
             <h3 className='text-primary font-bold'>November 18, 2023</h3>
-          </div>
+          </motion.div>
 
-          <div className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[50px]'>
+          <motion.div
+
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            viewport={{ once: true }} className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[50px]'>
             <h3 className='text-primary font-bold'>Teams Registration begins</h3>
             <p>Interested teams can now show their interest
               in the getlinked tech hackathon 1.0 2023 by
               proceeding to register</p>
             <h3 className='text-primary font-bold'>November 18, 2023</h3>
-          </div>
+          </motion.div>
 
-          <div className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[55px]'>
+          <motion.div
+
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            viewport={{ once: true }} className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[55px]'>
             <h3 className='text-primary font-bold'>Teams Registration ends</h3>
             <p>Interested Participants are no longer Allowed
               to register</p>
             <h3 className='text-primary font-bold'>November 18, 2023</h3>
-          </div>
+          </motion.div>
 
-          <div className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[50px]'>
+          <motion.div
+
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            viewport={{ once: true }} className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[50px]'>
             <h3 className='text-primary font-bold'>Announcement of the accepted teams
               and ideas</h3>
             <p>All teams whom idea has been accepted into
               getlinked tech hackathon 1.0 2023 are formally
               announced</p>
             <h3 className='text-primary font-bold'>November 18, 2023</h3>
-          </div>
+          </motion.div>
 
-          <div className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[65px]'>
+          <motion.div
+
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            viewport={{ once: true }} className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[65px]'>
             <h3 className='text-primary font-bold'>Getlinked Hackathon 1.0 Offically Begins</h3>
             <p>Accepted teams can now proceed to build
               their ground breaking skill driven solutions</p>
             <h3 className='text-primary font-bold'>November 18, 2023</h3>
-          </div>
+          </motion.div>
 
-          <div className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[50px]'>
+          <motion.div
+
+            initial={{ x: 150, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6, delay: 1 }}
+            viewport={{ once: true }} className='flex flex-col text-[12px] justify-between h-[100px] max-w-[350px] mt-[50px]'>
             <h3 className='text-primary font-bold'>Demo Day</h3>
             <p>Teams get the opportunity to pitch their
               projects to judges. The winner of the
               hackathon will also be announced on this day</p>
             <h3 className='text-primary font-bold'>November 18, 2023</h3>
-          </div>
+          </motion.div>
         </section>
       </main>
     </section>

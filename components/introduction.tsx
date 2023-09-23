@@ -16,7 +16,7 @@ const Introduction = () => {
           <motion.div
             initial={{ x: -200, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
-            transition={{ duration: 1, delay: 0.9 }}
+            transition={{ duration: 1, delay: 0.4 }}
             viewport={{ once: true }}
             className='flex-1 flex flex-col justify-center items-center md:p-10 relative'>
             <Image
