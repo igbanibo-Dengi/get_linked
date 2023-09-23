@@ -32,7 +32,7 @@ const page = () => {
           <motion.div
             initial={{ x: -400, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.8, delay: 0.8 }}
             viewport={{ once: true }}
             className='flex-1 flex justify-center items-center'>
             <Image
