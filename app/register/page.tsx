@@ -30,7 +30,7 @@ const page = () => {
 
         <div className='flex flex-col lg:flex-row'>
           <motion.div
-            initial={{ x: -400, opacity: 0 }}
+            initial={{ x: -200, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
             transition={{ duration: 0.8, delay: 0.8 }}
             viewport={{ once: true }}
