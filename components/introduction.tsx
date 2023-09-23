@@ -14,9 +14,9 @@ const Introduction = () => {
       <section className='container'>
         <div className='flex flex-col md:flex-row gap-10 md:gap-5'>
           <motion.div
-            initial={{ x: -200, opacity: 0 }}
+            initial={{ x: -300, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
-            transition={{ duration: 1, delay: 0.4 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
             className='flex-1 flex flex-col justify-center items-center md:p-10 relative'>
             <Image
