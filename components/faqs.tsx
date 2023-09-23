@@ -22,7 +22,7 @@ const Faqs = () => {
       <section className='container py-24'>
         <div className='flex flex-col-reverse md:flex-row-reverse  gap-10 md:gap-0 justify-center'>
           <motion.div
-            initial={{ x: 400, opacity: 0 }}
+            initial={{ x: 200, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
             transition={{ duration: 1, delay: 1 }}
             viewport={{ once: true }}

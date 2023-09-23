@@ -37,7 +37,7 @@ const Timeline = () => {
 
         <motion.div
           initial={{ x: -400, opacity: 0 }}
-          whileInView={{ opacity: 1, x: 0, }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
           viewport={{ once: true }}
           className='flex flex-1 items-end flex-col pt-[90px] text-right text-[12px] md:text-[14px]'>
@@ -82,7 +82,7 @@ const Timeline = () => {
         </div>
         <motion.div
           initial={{ x: 400, opacity: 0 }}
-          whileInView={{ opacity: 1, x: 0, }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6, delay: 1 }}
           viewport={{ once: true }}
           className='flex flex-1 items-start flex-col pt-[112px] text-left text-[12px] md:text-[14px]'>

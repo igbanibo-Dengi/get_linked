@@ -16,7 +16,7 @@ const Rules = () => {
       <section className='container'>
         <div className='flex flex-col md:flex-row-reverse'>
           <motion.div
-            initial={{ x: 400, opacity: 0 }}
+            initial={{ x: 200, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
             transition={{ duration: 1, delay: 2 }}
             viewport={{ once: true }}

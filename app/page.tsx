@@ -116,10 +116,10 @@ export default function Home() {
             </div>
           </div>
           <motion.div
-            initial={{ x: 400, opacity: 0 }}
-            whileInView={{ opacity: 1, x: 0, }}
+            initial={{ x: 100, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.7 }}
-            viewport={{ once: true }}
+            viewport={{ once: false }}
             className='flex-1 flex items-start flex-col justify-between relative overflow-hidden md:pt-10'>
             <div className='hidden md:flex items-end w-fit flex-col'>
               <Revolution />

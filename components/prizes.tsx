@@ -26,7 +26,7 @@ const Prizes = () => {
         </header>
         <div className='flex flex-col md:flex-row gap-36 md:gap-0'>
           <motion.div
-            initial={{ x: -400, opacity: 0 }}
+            initial={{ x: -200, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
             transition={{ duration: 1, delay: 1 }}
             viewport={{ once: true }}
@@ -145,7 +145,7 @@ const Prizes = () => {
 
               <motion.div
                 initial={{ y: -150, opacity: 1 }}
-                whileInView={{ opacity: 1, y: 0, }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
                 className='flex flex-col border border-primary justify-end rounded-[8px] h-[120px]  px-5 pb-5 text-center bg-primary/20 font-bold items-center'>
@@ -162,7 +162,7 @@ const Prizes = () => {
               </motion.div>
               <motion.div
                 initial={{ y: 150, opacity: 1 }}
-                whileInView={{ opacity: 1, y: 0, }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
                 className='flex flex-col border border-primary justify-end rounded-[8px] h-[130px]  px-5 pb-5 text-center bg-[#903AFF]/20 font-bold items-center'>
@@ -179,7 +179,7 @@ const Prizes = () => {
               </motion.div>
               <motion.div
                 initial={{ y: -150, opacity: 1 }}
-                whileInView={{ opacity: 1, y: 0, }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.3 }}
                 viewport={{ once: true }}
                 className='flex flex-col border border-primary justify-end rounded-[8px] h-[120px]  px-5 pb-5 text-center bg-primary/20 font-bold items-center'>

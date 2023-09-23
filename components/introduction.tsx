@@ -14,7 +14,7 @@ const Introduction = () => {
       <section className='container'>
         <div className='flex flex-col md:flex-row gap-10 md:gap-5'>
           <motion.div
-            initial={{ x: -400, opacity: 0 }}
+            initial={{ x: -200, opacity: 0 }}
             whileInView={{ opacity: 1, x: 0, }}
             transition={{ duration: 1, delay: 0.9 }}
             viewport={{ once: true }}
