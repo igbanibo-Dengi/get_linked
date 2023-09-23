@@ -26,11 +26,11 @@ const Introduction = () => {
           <div className='flex-1 flex flex-col justify-center text-center md:text-left md:p-10 gap-5 relative'>
             <h1 style={ClashDisplay.style} className='leading-[26px] md:leading-[42px] text-[20px] md:text-[26px] lg:text-[32px]'>Introduction to getlinked<br />tech Hackathon<span className='text-primary'>1.0</span></h1>
             <p className='max-w-[250px] sm:max-w-none mx-auto text-[13px] md:text-[14px] leading-[27px]'>Our tech hackathon is a melting pot of visionaries, and its purpose is as
-              clear as day: to shape the future. Whether you're a coding genius, a
+              clear as day: to shape the future. Whether you&apos;re a coding genius, a
               design maverick, or a concept wizard, you&apos;ll have the chance to transform
               your ideas into reality. Solving real-world problems, pushing the boundaries
               of technology, and creating solutions that can change the world,
-              that&apos;s what we're all about!</p>
+              that&apos;s what we&apos;re all about!</p>
             <div className='absolute z-20 -top-1 -right-10 md:top-44 md:right-5'>
               <PurpleStar />
             </div>

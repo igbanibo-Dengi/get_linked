@@ -49,7 +49,7 @@ const Faqs = () => {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="item-3">
-                  <AccordionTrigger>What happens if I don't have an idea for a project?</AccordionTrigger>
+                  <AccordionTrigger>What happens if I don&apos;t have an idea for a project?</AccordionTrigger>
                   <AccordionContent>
                     Yes. It&apos;s animated by default, but you can disable it if you
                     prefer.
