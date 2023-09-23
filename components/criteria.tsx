@@ -3,6 +3,7 @@ import { Button } from './ui/button'
 import Image from 'next/image'
 import chart from '../public/assets/images/chart.png'
 import flare from '../public/assets/images/Purple-Lens-Flare-complete.png'
+import { motion } from 'framer-motion'
 
 import localFont from 'next/font/local'
 
@@ -14,7 +15,12 @@ const Criteria = () => {
     <section className='border-b border-gray-700 '>
       <section className='container py-16'>
         <div className='flex flex-col md:flex-row justify-center'>
-          <div className='flex-1 flex flex-col justify-center items-center relative'>
+          <motion.div
+            initial={{ x: -400, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 1 }}
+            viewport={{ once: true }}
+            className='flex-1 flex flex-col justify-center items-center relative'>
             <Image
               src={chart}
               width={500}
@@ -29,7 +35,7 @@ const Criteria = () => {
               alt='purple flare'
               className='z-0 absolute md:bottom-32 -left-[60px] opacity-60 xl:-bottom-40 '
             />
-          </div>
+          </motion.div>
           <div className='flex-1 flex flex-col justify-center text-center md:text-left md:pl-20 gap-5 relative'>
             <h1 style={ClashDisplay.style} className='leading-[26px] md:leading-[42px] text-[20px] md:text-[32px]'>Judging Criteria <br /><span className='text-primary'>Key attributes</span></h1>
             <div className='flex flex-col gap-5 justify-center items-center md:items-start text-[12px] md:text-[14px] leading-[21px] md:leading-[27px]'>

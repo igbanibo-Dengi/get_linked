@@ -2,6 +2,8 @@ import Image from 'next/image'
 import React from 'react'
 import thinker from '../public/assets/images/thinker.png'
 import localFont from 'next/font/local'
+import { motion } from 'framer-motion'
+
 
 const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
 
@@ -19,14 +21,19 @@ const Faqs = () => {
     < section className='faq border-b border-gray-700 ' >
       <section className='container py-24'>
         <div className='flex flex-col-reverse md:flex-row-reverse  gap-10 md:gap-0 justify-center'>
-          <div className='flex-1 flex flex-col justify-center items-center'>
+          <motion.div
+            initial={{ x: 400, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 1 }}
+            viewport={{ once: true }}
+            className='flex-1 flex flex-col justify-center items-center'>
             <Image
               src={thinker}
               width={500}
               height={500}
               alt='The big Idea'
             />
-          </div>
+          </motion.div>
           <div className='relative flex-1 flex flex-col justify-center text-center md:text-left md:pl-20 gap-5'>
             <div className='absolute -top-10 left-10'>
               <PurpleStar />

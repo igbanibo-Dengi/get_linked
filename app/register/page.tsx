@@ -1,8 +1,11 @@
 
+'use client'
+
 import Image from 'next/image'
 import React from 'react';
 import PageImage from '../../public/assets/images/Group 7.png'
 import NavBar from '@/components/navigation/nav'
+import { motion } from 'framer-motion';
 
 
 
@@ -26,14 +29,19 @@ const page = () => {
         <h1 style={ClashDisplay.style} className='lg:hidden text-primary text-[20px] md:text-[32px]'>Register</h1>
 
         <div className='flex flex-col lg:flex-row'>
-          <div className='flex-1 flex justify-center items-center'>
+          <motion.div
+            initial={{ x: -400, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            viewport={{ once: true }}
+            className='flex-1 flex justify-center items-center'>
             <Image
               src={PageImage}
               width={600}
               height={600}
               alt='register Image'
             />
-          </div>
+          </motion.div>
           <section className='relative flex-1 sm:p-5 md:p-10 md:mr-5 sm:bg-gray-500/5 rounded-[12px] bg-clip-padding  bg-opacity-10'>
 
 

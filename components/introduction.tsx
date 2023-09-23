@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import ideaImg from '../public/assets/images/idea.png'
 import PurpleStar from '../components/purplestar/purpleStar'
+import { motion } from 'framer-motion'
 
 import localFont from 'next/font/local'
 
@@ -12,7 +13,12 @@ const Introduction = () => {
     < section className='overview border-b border-gray-700 pt-10 md:pt-0 pb-10 md:pb-0' >
       <section className='container'>
         <div className='flex flex-col md:flex-row gap-10 md:gap-5'>
-          <div className='flex-1 flex flex-col justify-center items-center md:p-10 relative'>
+          <motion.div
+            initial={{ x: -400, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.9 }}
+            viewport={{ once: true }}
+            className='flex-1 flex flex-col justify-center items-center md:p-10 relative'>
             <Image
               src={ideaImg}
               width={500}
@@ -22,7 +28,7 @@ const Introduction = () => {
             <div className='absolute z-20 top-16 -left-5 md:top-40 md:left-5'>
               <PurpleStar />
             </div>
-          </div>
+          </motion.div>
           <div className='flex-1 flex flex-col justify-center text-center md:text-left md:p-10 gap-5 relative'>
             <h1 style={ClashDisplay.style} className='leading-[26px] md:leading-[42px] text-[20px] md:text-[26px] lg:text-[32px]'>Introduction to getlinked<br />tech Hackathon<span className='text-primary'>1.0</span></h1>
             <p className='max-w-[250px] sm:max-w-none mx-auto text-[13px] md:text-[14px] leading-[27px]'>Our tech hackathon is a melting pot of visionaries, and its purpose is as

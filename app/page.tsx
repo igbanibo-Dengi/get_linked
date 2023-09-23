@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import heroImg from '../public/assets/images/hero_img.png'
 import bulb from '../public/assets/images/bulb.png'
@@ -7,6 +9,7 @@ import StarGif from '../components/starGif/stargif'
 import Starcluster from '../components/starcluster/cluster'
 import FlickerGif from '../components/flicker/flicker'
 import { Button } from '@/components/ui/button'
+import { motion } from 'framer-motion'
 
 // components imports 
 import Introduction from '@/components/introduction'
@@ -112,7 +115,12 @@ export default function Home() {
 
             </div>
           </div>
-          <div className='flex-1 flex items-start flex-col justify-between relative overflow-hidden md:pt-10'>
+          <motion.div
+            initial={{ x: 400, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 0.7 }}
+            viewport={{ once: true }}
+            className='flex-1 flex items-start flex-col justify-between relative overflow-hidden md:pt-10'>
             <div className='hidden md:flex items-end w-fit flex-col'>
               <Revolution />
               <svg width="220" height="17" viewBox="0 0 255 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -150,7 +158,7 @@ export default function Home() {
               alt='purple flare'
               className='absolute left-[98px] top-0 hidden md:block'
             />
-          </div>
+          </motion.div>
         </section>
 
       </section>

@@ -3,6 +3,7 @@ import { Button } from './ui/button'
 import localFont from 'next/font/local'
 import StarGif from './starGif/stargif'
 import PurpleStar from './purplestar/purpleStar'
+import { motion } from 'framer-motion'
 
 const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
 
@@ -34,7 +35,12 @@ const Timeline = () => {
 
 
 
-        <div className='flex flex-1 items-end flex-col pt-[90px] text-right text-[12px] md:text-[14px]'>
+        <motion.div
+          initial={{ x: -400, opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0, }}
+          transition={{ duration: 0.6, delay: 1 }}
+          viewport={{ once: true }}
+          className='flex flex-1 items-end flex-col pt-[90px] text-right text-[12px] md:text-[14px]'>
           <div className='h-20 w-fit'>
             <h3 className='text-primary text-[24px] font-bold'>Hackathon Announcement</h3>
             <p>The getlinked tech hackathon 1.0 is formally announced <br />
@@ -59,7 +65,7 @@ const Timeline = () => {
           <div className='h-20 w-fit mt-[108px]'>
             <h3 className='text-primary text-[24px] font-bold'>November 18, 2023</h3>
           </div>
-        </div>
+        </motion.div>
         <div className='flex flex-col gap-16 w-fit mx-auto items-center justify-center'>
           <div> <hr className='rotate-90 w-28 border border-primary' /> </div>
           <Button size={'icon'}>1</Button>
@@ -74,7 +80,12 @@ const Timeline = () => {
           <div> <hr className='rotate-90 w-20 border border-primary' /> </div>
           <Button size={'icon'}>6</Button>
         </div>
-        <div className='flex flex-1 items-start flex-col pt-[112px] text-left text-[12px] md:text-[14px]'>
+        <motion.div
+          initial={{ x: 400, opacity: 0 }}
+          whileInView={{ opacity: 1, x: 0, }}
+          transition={{ duration: 0.6, delay: 1 }}
+          viewport={{ once: true }}
+          className='flex flex-1 items-start flex-col pt-[112px] text-left text-[12px] md:text-[14px]'>
           <div className='h-20 w-fit'>
             <h3 className='text-primary text-[24px] font-bold'>November 18, 2023</h3>
           </div>
@@ -101,7 +112,7 @@ const Timeline = () => {
               The winner of the hackathon will also be announced on <br />
               this day</p>
           </div>
-        </div>
+        </motion.div>
       </main>
       {/* for screens < 768px*/}
       <main className='flex md:hidden relative  '>

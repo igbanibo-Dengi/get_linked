@@ -2,6 +2,7 @@ import Image from 'next/image'
 import React from 'react'
 import guide from '../public/assets/images/guidelines.png'
 import flare from '../public/assets/images/Purple-Lens-Flare-complete.png'
+import { motion } from 'framer-motion'
 
 
 import localFont from 'next/font/local'
@@ -14,7 +15,12 @@ const Rules = () => {
     < section className='border-b border-gray-700 pb-10 md:pb-0' >
       <section className='container'>
         <div className='flex flex-col md:flex-row-reverse'>
-          <div className=' relative flex-1 flex flex-col justify-center items-center'>
+          <motion.div
+            initial={{ x: 400, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 2 }}
+            viewport={{ once: true }}
+            className=' relative flex-1 flex flex-col justify-center items-center'>
             <Image
               src={guide}
               width={500}
@@ -29,7 +35,7 @@ const Rules = () => {
               alt='purple flare'
               className='z-0 absolute -top-[100px] -left-28  md:top-32 md:left-[250px] lg:left-[300px] xl:left-[400px] opacity-60 '
             />
-          </div>
+          </motion.div>
           <div className='relative flex-1 flex flex-col justify-center z-20 text-center md:text-left md:pl-20 gap-5'>
             <h1 style={ClashDisplay.style} className='leading-[26px] md:leading-[39px] text-[20px] md:text-[32px]'>Rules and <br /><span className='text-primary'>Guidelines</span></h1>
             <p className='text-[13px] md:text-[14px] leading-[27px]'>Our tech hackathon is a melting pot of visionaries, and its purpose is as
