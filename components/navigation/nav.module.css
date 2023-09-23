@@ -1,9 +1,0 @@
-/* nav.css */
-.mobile-menu {
-  transition: transform 600ms ease-in-out;
-  transform: translateY(-150%);
-}
-
-.mobile-menu.open {
-  transform: translateY(0px);
-}

@@ -24,6 +24,7 @@ import Privacy from '@/components/privacy'
 import localFont from 'next/font/local'
 import Revolution from '@/components/ui/revolution'
 import Timer from '@/components/ui/timer'
+import NavBar from '@/components/navigation/nav'
 const ClashDisplay = localFont({ src: '/fonts/ClashDisplay.ttf' })
 
 
@@ -32,9 +33,10 @@ const ClashDisplay = localFont({ src: '/fonts/ClashDisplay.ttf' })
 
 export default function Home() {
   return (
-    <main className=' text-white'>
+    <main className=' text-white '>
+      <NavBar />
       {/* Hero section */}
-      <section className="border-b border-gray-700 bg-contain ">
+      <section className="border-b border-gray-700 bg-contain pt-20 md:pt-0">
         <div className='flex flex-col items-end w-fit mx-auto md:hidden py-10'>
           <Revolution />
           <svg width="155" height="12" viewBox="0 0 255 17" fill="none" xmlns="http://www.w3.org/2000/svg">

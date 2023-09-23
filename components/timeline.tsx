@@ -10,10 +10,10 @@ const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
 
 const Timeline = () => {
   return (
-    <section className='border-b border-black pt-20 pb-32'>
+    <section id='timeline' className='timeline border-b border-black pt-20 pb-32'>
       <header className='text-center mb-10 md:mb-36'>
         <h1 style={ClashDisplay.style} className='text-[20px] md:text-[32px]'>Timeline</h1>
-        <p className='text-[14px]'>Here is the breakdown of the time we anticipate
+        <p className='text-[14px] leading-[24px]'>Here is the breakdown of the time we anticipate
           using for the upcoming event.</p>
       </header>
       {/* for screens > 768px */}

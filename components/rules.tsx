@@ -31,13 +31,13 @@ const Rules = () => {
             />
           </div>
           <div className='relative flex-1 flex flex-col justify-center z-20 text-center md:text-left md:pl-20 gap-5'>
-            <h1 style={ClashDisplay.style} className='leading-tight text-[20px] md:text-[32px]'>Rules and <br /><span className='text-primary'>Guidelines</span></h1>
-            <p className='text-[13px] md:text-[14px]'>Our tech hackathon is a melting pot of visionaries, and its purpose is as
-              clear as day: to shape the future. Whether you're a coding genius, a
+            <h1 style={ClashDisplay.style} className='leading-[26px] md:leading-[39px] text-[20px] md:text-[32px]'>Rules and <br /><span className='text-primary'>Guidelines</span></h1>
+            <p className='text-[13px] md:text-[14px] leading-[27px]'>Our tech hackathon is a melting pot of visionaries, and its purpose is as
+              clear as day: to shape the future. Whether you&apos;re a coding genius, a
               design maverick, or a concept wizard, you'll have the chance to transform
               your ideas into reality. Solving real-world problems, pushing the boundaries
               of technology, and creating solutions that can change the world,
-              that's what we're all about!</p>
+              that&apos;s what we're all about!</p>
             <div className='absolute top-10 right-0 lg:top-32 lg:right-56'>
               {/* top-10 left-1  */}
               <StarGif />

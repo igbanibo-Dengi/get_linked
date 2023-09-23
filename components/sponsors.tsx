@@ -14,7 +14,7 @@ const Sponsors = () => {
       <section className='container py-16'>
         <header className='text-center mb-10 max-w-[500px] mx-auto'>
           <h1 style={ClashDisplay.style} className='text-[20px] md:text-[36px] font-bold mb-2'>Partners and Sponsors</h1>
-          <p className='text-[12px] md:text-[14px]'>Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
+          <p className='text-[12px] md:text-[14px] leading-[27px]'>Getlinked Hackathon 1.0 is honored to have the following major companies as its partners and sponsors</p>
         </header>
         <div className=' relative'>
           <div className='z-20 absolute top-10 left-[700px]'>

@@ -31,8 +31,8 @@ const Criteria = () => {
             />
           </div>
           <div className='flex-1 flex flex-col justify-center text-center md:text-left md:pl-20 gap-5 relative'>
-            <h1 style={ClashDisplay.style} className='leading-tight text-[20px] md:text-[32px]'>Judging Criteria <br /><span className='text-primary'>Key attributes</span></h1>
-            <div className='flex flex-col gap-5 justify-center items-center md:items-start text-[12px] md:text-[14px]'>
+            <h1 style={ClashDisplay.style} className='leading-[26px] md:leading-[42px] text-[20px] md:text-[32px]'>Judging Criteria <br /><span className='text-primary'>Key attributes</span></h1>
+            <div className='flex flex-col gap-5 justify-center items-center md:items-start text-[12px] md:text-[14px] leading-[21px] md:leading-[27px]'>
               <p> <span className='text-[#FF26B9] font-bold'>Innovation and Creativity: </span>Evaluate the uniqueness and creativity of the
                 solution. Consider whether it addresses a real-world problem in a novel
                 way or introduces innovative features.</p>

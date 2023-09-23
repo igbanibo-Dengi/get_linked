@@ -15,14 +15,14 @@ const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
 
 const Prizes = () => {
   return (
-    < section className="border-b border-black md:pb-20 b bg-cover bg-[url('../public/assets/images/prize-bg-image-1.png')]" >
+    < section className="border-b bg-[#100B20] border-black md:pb-20 b bg-cover bg-[url('../public/assets/images/prize-bg-image-1.png')]" >
       <section className='container py-16 relative '>
         {/* <div className='hidden xl:block h-[800px] w-[3990px] -top-10 right-[395px] border-[3px] border-gray-950/80 absolute'></div>
         <div className='hidden xl:block h-[800px] w-[3990px] top-56 left-[1040px] border-[3px] border-gray-950/80 absolute'></div> */}
 
         {/* header for small screens */}
         <header className='text-center md:hidden'>
-          <h1 style={ClashDisplay.style} className='text-[20px] md:text-[32px] leading-tight'>Prizes and <br /><span className='text-primary'>Rewards</span></h1>
+          <h1 style={ClashDisplay.style} className='text-[20px] md:text-[32px] leading-[24px] md:leading-[39px]'>Prizes and <br /><span className='text-primary'>Rewards</span></h1>
           <p className='text-[14px]'>Highlight of the prizes or rewards for winners and for participants</p>
         </header>
         <div className='flex flex-col md:flex-row gap-36 md:gap-0'>
@@ -50,7 +50,7 @@ const Prizes = () => {
             {/* header for large screens */}
 
             <header className='text-center md:text-left mb-44 mx-auto hidden md:block z-10'>
-              <h1 style={ClashDisplay.style} className='text-[20px] md:text-[32px] leading-tight'>Prizes and <br /><span className='text-primary'>Rewards</span></h1>
+              <h1 style={ClashDisplay.style} className='text-[20px] md:text-[32px] leading-[39px]'>Prizes and <br /><span className='text-primary'>Rewards</span></h1>
               <p className='text-[14px]'>Highlight of the prizes or rewards for winners and <br /> for participants</p>
             </header>
             {/* for screens > 768px */}

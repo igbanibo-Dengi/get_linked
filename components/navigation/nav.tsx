@@ -5,6 +5,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { Button } from "../ui/button";
 import localFont from 'next/font/local'
+import Links from './Links';
 
 const ClashDisplay = localFont({ src: '../../app/fonts/ClashDisplay.ttf' })
 
@@ -13,7 +14,7 @@ const NavBar = () => {
 
   const pathname = usePathname();
   return (
-    <nav className="w-full pt-4 bg-background text-white z-50 border-b border-gray-700">
+    <nav className="w-full pt-4 bg-background  md:bg-transparent fixed md:sticky text-white z-50 border-b border-gray-700">
       <div className="justify-between md:items-center md:flex max-w-[1200px] mx-auto px-5">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
@@ -52,19 +53,8 @@ const NavBar = () => {
             className={`flex-1 justify-self-center pb-3 h-screen sm:h-fit mt-8 md:block md:pb-0 md:mt-0 ${navbar ? "block" : "hidden"
               }`}
           >
-            <div className="flex flex-col md:flex-row justify-center md:items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <Link href="/" className="hover:text-primary">
-                Timeline
-              </Link>
-              <Link href="about/" className="hover:text-primary">
-                Overview
-              </Link>
-              <Link
-                href="/domain"
-                className="hover:text-primary"
-              >
-                FAQs
-              </Link>
+            <div className="flex flex-col h-screen md:h-fit md:flex-row md:justify-center md:items-center space-y-8 md:flex md:space-x-6 md:space-y-0">
+              <Links />
               <Link href='/contact' className={pathname === '/contact' ? 'text-primary' : 'hover:text-primary'}>Contact</Link>
               <Link href='/register' className="w-fit">
                 <Button size={'lg'}>Register</Button>
