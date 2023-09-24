@@ -1,8 +1,9 @@
-import NavBar from '@/components/navigation/nav'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
 import Footer from '@/components/footer'
+import { Suspense } from 'react'
+import Loading from './loading'
 
 
 const inter = Montserrat({ subsets: ['latin'] })
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <main className='overflow-hidden'>
           {children}
+
           <Footer />
 
         </main>

@@ -34,7 +34,12 @@ const Faqs = () => {
               alt='The big Idea'
             />
           </motion.div>
-          <div className='relative flex-1 flex flex-col justify-center text-center md:text-left md:pl-20 gap-5'>
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='relative flex-1 flex flex-col justify-center text-center md:text-left md:pl-20 gap-5'>
             <div className='absolute -top-10 left-10'>
               <PurpleStar />
             </div>
@@ -87,7 +92,7 @@ const Faqs = () => {
             </div>
 
 
-          </div>
+          </motion.div>
         </div>
       </section>
     </section >

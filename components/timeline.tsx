@@ -12,11 +12,17 @@ const ClashDisplay = localFont({ src: '../app/fonts/ClashDisplay.ttf' })
 const Timeline = () => {
   return (
     <section id='timeline' className='timeline border-b border-black pt-20 pb-32'>
-      <header className='text-center mb-10 md:mb-36'>
+      <motion.header
+        initial={{ y: 200, opacity: 0 }}
+        whileInView={{ opacity: 1, y: 0, }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        viewport={{ once: true }}
+
+        className='text-center mb-10 md:mb-36'>
         <h1 style={ClashDisplay.style} className='text-[20px] md:text-[32px]'>Timeline</h1>
         <p className='text-[14px] leading-[24px]'>Here is the breakdown of the time we anticipate
           using for the upcoming event.</p>
-      </header>
+      </motion.header>
       {/* for screens > 768px */}
       <main className='container hidden md:flex relative'>
 
@@ -35,84 +41,165 @@ const Timeline = () => {
 
 
 
-        <motion.div
-          initial={{ x: -100, opacity: 0 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          viewport={{ once: true }}
+        <div
           className='flex flex-1 items-end flex-col pt-[90px] text-right text-[12px] md:text-[14px]'>
-          <div className='h-20 w-fit'>
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit'>
             <h3 className='text-primary text-[24px] font-bold'>Hackathon Announcement</h3>
             <p>The getlinked tech hackathon 1.0 is formally announced <br />
               to the general public and teams begin to get ready to register</p>
-          </div>
-          <div className='h-20 w-fit mt-[115px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[115px]'>
             <h3 className='text-primary text-[24px] font-bold'>November 18, 2023</h3>
-          </div>
-          <div className='h-20 w-fit mt-[65px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[65px]'>
             <h3 className='text-primary text-[24px] font-bold'>Teams Registration ends</h3>
             <p>Interested Participants are no longer Allowed to <br />
               register</p>
-          </div>
-          <div className='h-20 w-fit mt-[115px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[115px]'>
             <h3 className='text-primary text-[24px] font-bold'>November 18, 2023</h3>
-          </div>
-          <div className='h-20 w-fit mt-[70px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[70px]'>
             <h3 className='text-primary text-[24px] font-bold'>Getlinked Hackathon 1.0 Offically Begins</h3>
             <p>Accepted teams can now proceed to build their <br />
               ground breaking skill driven solutions</p>
-          </div>
-          <div className='h-20 w-fit mt-[108px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[108px]'>
             <h3 className='text-primary text-[24px] font-bold'>November 18, 2023</h3>
-          </div>
-        </motion.div>
-        <div className='flex flex-col gap-16 w-fit mx-auto items-center justify-center'>
-          <div> <hr className='rotate-90 w-28 border border-primary' /> </div>
-          <Button size={'icon'}>1</Button>
-          <div> <hr className='rotate-90 w-20 border border-primary' /> </div>
-          <Button size={'icon'}>2</Button>
-          <div> <hr className='rotate-90 w-20 border border-primary' /> </div>
-          <Button size={'icon'}>3</Button>
-          <div> <hr className='rotate-90 w-20 border border-primary' /> </div>
-          <Button size={'icon'}>4</Button>
-          <div> <hr className='rotate-90 w-20 border border-primary' /> </div>
-          <Button size={'icon'}>5</Button>
-          <div> <hr className='rotate-90 w-20 border border-primary' /> </div>
-          <Button size={'icon'}>6</Button>
+          </motion.div>
         </div>
-        <motion.div
-          initial={{ x: 100, opacity: 0 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, delay: 1 }}
-          viewport={{ once: true }}
-          className='flex flex-1 items-start flex-col pt-[112px] text-left text-[12px] md:text-[14px]'>
-          <div className='h-20 w-fit'>
+        <motion.div className='flex flex-col gap-16 w-fit mx-auto items-center justify-center'>
+          <motion.div
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0, }}
+            transition={{ duration: 1.5, delay: 0.9 }}
+            viewport={{ once: true }}
+          > <hr className='rotate-90 w-28 border border-primary' /> </motion.div>
+          <Button size={'icon'}>1</Button>
+          <motion.div
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0, }}
+            transition={{ duration: 1.5, delay: 0.9 }}
+            viewport={{ once: true }}
+          > <hr className='rotate-90 w-20 border border-primary' /> </motion.div>
+          <Button size={'icon'}>2</Button>
+          <motion.div
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0, }}
+            transition={{ duration: 1.5, delay: 0.9 }}
+            viewport={{ once: true }}
+          > <hr className='rotate-90 w-20 border border-primary' /> </motion.div>
+          <Button size={'icon'}>3</Button>
+          <motion.div
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0, }}
+            transition={{ duration: 1.5, delay: 0.9 }}
+            viewport={{ once: true }}
+          > <hr className='rotate-90 w-20 border border-primary' /> </motion.div>
+          <Button size={'icon'}>4</Button>
+          <motion.div
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0, }}
+            transition={{ duration: 1.5, delay: 0.9 }}
+            viewport={{ once: true }}
+          > <hr className='rotate-90 w-20 border border-primary' /> </motion.div>
+          <Button size={'icon'}>5</Button>
+          <motion.div
+            initial={{ y: -200, opacity: 0 }}
+            whileInView={{ opacity: 1, y: 0, }}
+            transition={{ duration: 1.5, delay: 0.9 }}
+            viewport={{ once: true }}
+          > <hr className='rotate-90 w-20 border border-primary' /> </motion.div>
+          <Button size={'icon'}>6</Button>
+        </motion.div>
+        <div className='flex flex-1 items-start flex-col pt-[112px] text-left text-[12px] md:text-[14px]'>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit'>
             <h3 className='text-primary text-[24px] font-bold'>November 18, 2023</h3>
-          </div>
-          <div className='h-20 w-fit mt-[73px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ uration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[73px]'>
             <h3 className='text-primary text-[24px] font-bold'>Teams Registration begins</h3>
             <p>Interested teams can now show their interest in the <br />
               getlinked tech hackathon 1.0 2023 by proceeding to register</p>
-          </div>
-          <div className='h-20 w-fit mt-[108px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[108px]'>
             <h3 className='text-primary text-[24px] font-bold'>November 18, 2023</h3>
-          </div>
-          <div className='h-20 w-fit mt-[70px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[70px]'>
             <h3 className='text-primary text-[24px] font-bold'>Announcement of the accepted teams
               and ideas</h3>
             <p>All teams whom idea has been accepted into getlinked tech <br />
               hackathon 1.0 2023 are formally announced</p>
-          </div>
-          <div className='h-20 w-fit mt-[110px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[110px]'>
             <h3 className='text-primary text-[24px] font-bold'>November 18, 2023</h3>
-          </div>
-          <div className='h-20 w-fit mt-[75px]'>
+          </motion.div>
+          <motion.div
+            initial={{ x: 200, opacity: 0 }}
+            whileInView={{ opacity: 1, x: 0, }}
+            transition={{ duration: 1, delay: 0.5 }}
+            viewport={{ once: true }}
+            className='h-20 w-fit mt-[75px]'>
             <h3 className='text-primary text-[24px] font-bold'>Demo Day</h3>
             <p>Teams get the opportunity to pitch their projects to judges. <br />
               The winner of the hackathon will also be announced on <br />
               this day</p>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </main>
       {/* for screens < 768px*/}
       <main className='flex md:hidden relative  '>

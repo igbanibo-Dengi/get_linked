@@ -12,7 +12,6 @@ import { Unica_One } from 'next/font/google'
 const unica = Unica_One({
   weight: '400',
   subsets: ['latin'],
-  display: 'swap',
 })
 
 const Timer = () => {
