@@ -31,10 +31,7 @@ const page = () => {
       <NavBar />
       <div className='container pt-20 md:pt-0'>
         <section
-          initial={{ x: -200, opacity: 0 }}
-          whileInView={{ opacity: 1, x: 0, }}
-          transition={{ duration: 1, delay: 0.5 }}
-          viewport={{ once: false }}
+
           className=' hidden sm:flex flex-row justify-around py-16 relative'>
 
 
